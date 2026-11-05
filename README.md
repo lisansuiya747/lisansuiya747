@@ -1,19 +1,43 @@
-# 👋 Hi，我是李丽冰
-211应用经济学硕士，秋招求职产品/管培相关岗位。擅长需求梳理、用户调研、原型设计与方案落地，持续沉淀产品思考与项目实践。
+# 李丽冰｜产品经理 / 管培生 秋招
 
+**应用经济学硕士**，专注产品经理与综合管培方向。  
+具备 B 端产品实践、MES 系统需求迭代、小程序产品设计与数据分析能力，擅长把业务问题转化为产品方案。
 
+---
 
+## 关于我
 
+- 求职方向：产品经理 / 综合管培生
+- 核心优势：B 端需求梳理、流程设计、原型输出、数据分析、跨部门推进
+- 近期关注：企业数字化、生产管理系统、小程序产品、用户增长
+- 一句话定位：**懂业务、能分析、会落地的产品候选人**
 
-## 🛠️ 技能栈
-<div align="left">
-  <img src="https://img.shields.io/badge/Axure%20RP-9999FF?style=flat&logo=axure&logoColor=white" />
-  <img src="https://img.shields.io/badge/Figma-F24E1E?style=flat&logo=figma&logoColor=white" />
-  <img src="https://img.shields.io/badge/PRD-4285F4?style=flat" />
-  <img src="https://img.shields.io/badge/%E7%94%A8%E6%88%B7%E8%B0%83%E7%A0%94-34A853?style=flat" />
-  <img src="https://img.shields.io/badge/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90-FBBC05?style=flat" />
-  <img src="https://img.shields.io/badge/Markdown-000000?style=flat&logo=markdown&logoColor=white" />
-</div>
+---
 
-## 📂 作品集项目
-> 项目持续更新中，后续会补充项目介绍、原型、方案复盘与仓库链接
+## 专业能力
+
+| 模块 | 能力 |
+|---|---|
+| 产品设计 | 需求分析、用户调研、流程梳理、原型设计、PRD 撰写 |
+| 工具能力 | Axure、Figma、Excel、SQL、Markdown、HTML |
+| 业务场景 | MES 系统、生产管理、小程序、B 端后台 |
+| 分析能力 | 数据清洗、指标拆解、用户分析、课题研究 |
+
+---
+
+## 项目经历
+
+### 1. MES 系统需求迭代项目
+- 负责生产管理模块的需求收集、业务流程梳理与原型设计
+- 对接业务、研发与测试团队，推动需求方案落地
+- 关注生产流程效率、异常处理与用户操作成本优化
+
+### 2. 小程序产品实践项目
+- 独立完成用户调研、需求定义、信息架构设计与原型输出
+- 围绕目标用户路径优化功能结构，提升使用效率
+- 输出产品方案、页面原型与功能说明文档
+
+### 3. 数据分析课题研究
+- 基于经济学方法进行数据整理、指标分析与结论提炼
+- 将分析结果转化为业务建议与可执行方案
+- 具备较强的数据敏感、逻辑表达和报告输出能力
