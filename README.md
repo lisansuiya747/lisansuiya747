@@ -3,6 +3,8 @@
 
 
 
+
+
 ## 🛠️ 技能栈
 <div align="left">
   <img src="https://img.shields.io/badge/Axure%20RP-9999FF?style=flat&logo=axure&logoColor=white" />
@@ -15,3 +17,7 @@
 
 ## 📂 作品集项目
 > 项目持续更新中，后续会补充项目介绍、原型、方案复盘与仓库链接
+
+## 📫 联系我
+邮箱：xxx@shturl.
+简历链接：xxx
