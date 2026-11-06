@@ -1,46 +1,564 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>李丽冰 | 产品经理作品集</title>
-    <link rel="stylesheet" href="./style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>李丽冰 · 产品经理作品集</title>
+<meta name="description" content="李丽冰，长安大学应用经济学硕士，2027 届秋招产品经理 / 管培生。MES 产品实践、需求调研、原型设计与数据分析。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230D4A57'/%3E%3Cpath d='M14 44h36M14 32h26M14 20h36' stroke='%23F3F5F4' stroke-width='5' stroke-linecap='square'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://miaoda.feishu.cn">
+<link rel="stylesheet" href="https://miaoda.feishu.cn/fonts/css2?family=Noto+Serif+SC:wght@400;600;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap">
+<style>
+:root{
+  --paper:#F3F5F4;
+  --paper-deep:#E9ECEA;
+  --ink:#14181A;
+  --ink-2:#5B6267;
+  --line:#D7DBD8;
+  --accent:#0D4A57;
+  --accent-tint:#DFEAEC;
+  --serif:"Noto Serif SC","Songti SC","Source Han Serif SC",Georgia,serif;
+  --sans:"Noto Sans SC","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  --wrap:1080px;
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:var(--sans);
+  font-weight:400;
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer}
+
+/* ---------- 顶栏 ---------- */
+.topbar{
+  position:sticky;top:0;z-index:20;
+  background:var(--paper);
+  border-bottom:1px solid var(--line);
+}
+.topbar-inner{
+  max-width:var(--wrap);margin:0 auto;
+  padding:14px 28px;
+  display:flex;align-items:center;justify-content:space-between;gap:20px;
+}
+.brand{
+  display:flex;align-items:center;gap:10px;
+  font-family:var(--serif);font-weight:600;font-size:16px;letter-spacing:.04em;
+}
+.brand svg{width:22px;height:22px;flex:none}
+.nav{display:flex;align-items:center;gap:26px}
+.nav a{
+  font-size:14px;color:var(--ink-2);
+  padding:4px 0;
+  border-bottom:1px solid transparent;
+  transition:color .18s,border-color .18s;
+}
+.nav a:hover{color:var(--accent);border-color:var(--accent)}
+.topbar-actions{display:flex;align-items:center;gap:14px}
+.btn-print{
+  border:1px solid var(--line);background:transparent;color:var(--ink-2);
+  font-size:13px;padding:7px 14px;letter-spacing:.02em;
+  transition:border-color .18s,color .18s;
+}
+.btn-print:hover{border-color:var(--accent);color:var(--accent)}
+
+/* ---------- 主体容器 ---------- */
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 28px}
+
+/* ---------- Hero ---------- */
+.hero{
+  display:grid;
+  grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);
+  gap:56px;
+  padding:88px 0 72px;
+  align-items:start;
+}
+.hero-name{
+  font-family:var(--serif);font-weight:600;
+  font-size:clamp(52px,8.4vw,96px);
+  line-height:1.02;
+  letter-spacing:.03em;
+  margin-bottom:22px;
+}
+.hero-title{
+  font-size:clamp(17px,2.2vw,21px);
+  font-weight:500;
+  color:var(--accent);
+  letter-spacing:.02em;
+  margin-bottom:26px;
+}
+.hero-intro{
+  max-width:34em;
+  font-size:16px;
+  color:var(--ink-2);
+  line-height:1.95;
+}
+.hero-intro strong{color:var(--ink);font-weight:500}
+
+.facts{
+  border-left:1px solid var(--line);
+  padding-left:30px;
+}
+.fact{
+  padding:0 0 18px;
+}
+.fact + .fact{border-top:1px solid var(--line);padding-top:18px}
+.fact dt{
+  font-size:12px;letter-spacing:.12em;color:var(--ink-2);
+  margin-bottom:4px;
+}
+.fact dd{
+  font-size:15px;color:var(--ink);line-height:1.6;
+}
+.fact dd span{color:var(--ink-2);font-size:13.5px;display:block;margin-top:2px}
+
+/* ---------- 区块 ---------- */
+.section{
+  border-top:1px solid var(--line);
+  padding:52px 0 60px;
+}
+.sec-head{
+  display:grid;
+  grid-template-columns:220px minmax(0,1fr);
+  gap:48px;
+  align-items:baseline;
+  margin-bottom:40px;
+}
+.sec-title{
+  font-family:var(--serif);font-weight:600;
+  font-size:26px;letter-spacing:.04em;
+  position:relative;
+  padding-bottom:10px;
+}
+.sec-title::after{
+  content:"";position:absolute;left:0;bottom:0;
+  width:36px;height:2px;background:var(--accent);
+}
+.sec-note{
+  font-size:14.5px;color:var(--ink-2);line-height:1.8;
+  max-width:34em;
+}
+
+/* 能力 */
+.abilities{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:0;
+  margin-left:268px;
+}
+.ability{
+  padding:0 30px;
+  border-left:1px solid var(--line);
+}
+.ability:first-child{padding-left:0;border-left:none}
+.ability h3{
+  font-family:var(--serif);font-size:17px;font-weight:600;
+  margin-bottom:16px;
+}
+.ability ul{list-style:none}
+.ability li{
+  font-size:14.5px;line-height:1.7;
+  padding:7px 0;
+  color:var(--ink);
+  border-bottom:1px dotted var(--line);
+}
+.ability li:last-child{border-bottom:none}
+.ability li i{
+  display:block;font-style:normal;font-size:13px;color:var(--ink-2);line-height:1.6;margin-top:1px;
+}
+
+/* 时间线 */
+.timeline{margin-left:268px}
+.tl-row{
+  display:grid;
+  grid-template-columns:120px 24px minmax(0,1fr);
+  align-items:stretch;
+  column-gap:16px;
+  position:relative;
+}
+.tl-time{
+  font-size:13px;color:var(--ink-2);
+  text-align:right;
+  padding-top:2px;
+  letter-spacing:.02em;
+  align-self:start;
+}
+.tl-axis{position:relative;align-self:stretch;display:flex;justify-content:center}
+.tl-axis::before{
+  content:"";position:absolute;top:0;bottom:0;width:1px;background:#C3CAC6;
+  left:calc(50% - .5px);
+}
+.tl-dot{
+  width:8px;height:8px;border-radius:50%;
+  background:var(--paper);
+  border:1.5px solid var(--accent);
+  position:relative;z-index:1;
+  margin-top:6px;
+}
+.tl-body{padding-bottom:34px}
+.tl-body h3{font-size:16px;font-weight:500;margin-bottom:4px}
+.tl-body h3 em{font-style:normal;color:var(--ink-2);font-size:13.5px;font-weight:400;margin-left:8px}
+.tl-body p{font-size:14px;color:var(--ink-2);line-height:1.75;max-width:38em}
+.tl-row:last-child .tl-body{padding-bottom:0}
+
+/* 项目 */
+.project{
+  margin-left:268px;
+  padding:30px 0;
+  border-top:1px solid var(--line);
+}
+.project:first-of-type{border-top:none;padding-top:0}
+.project-head{
+  display:flex;align-items:baseline;justify-content:space-between;
+  gap:24px;flex-wrap:wrap;
+  margin-bottom:14px;
+}
+.project-head h3{
+  font-family:var(--serif);font-size:19px;font-weight:600;letter-spacing:.02em;
+}
+.project-meta{
+  display:flex;gap:22px;flex-wrap:wrap;
+  font-size:13px;color:var(--ink-2);
+}
+.project-meta span b{font-weight:400;color:var(--ink)}
+.project-body p{
+  font-size:14.5px;line-height:1.85;color:var(--ink-2);
+  max-width:48em;
+  margin-bottom:8px;
+}
+.project-body p::first-letter{letter-spacing:0}
+.project-body p b{color:var(--ink);font-weight:500}
+
+/* 联系 */
+.contact{
+  border-top:1px solid var(--line);
+  padding:72px 0 56px;
+  display:grid;
+  grid-template-columns:minmax(0,1fr) auto;
+  gap:40px;
+  align-items:end;
+}
+.contact h2{
+  font-family:var(--serif);font-size:clamp(28px,4vw,40px);
+  font-weight:600;line-height:1.3;letter-spacing:.02em;
+  max-width:16em;
+}
+.contact-links{display:flex;flex-direction:column;gap:10px;align-items:flex-end}
+.contact-links a,.contact-links button{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:14px;color:var(--ink);
+  border-bottom:1px solid var(--line);
+  padding-bottom:3px;
+  background:none;border-top:none;border-left:none;border-right:none;
+  transition:border-color .18s,color .18s;
+}
+.contact-links a:hover,.contact-links button:hover{color:var(--accent);border-color:var(--accent)}
+.contact-links svg{width:15px;height:15px;flex:none;stroke:currentColor;fill:none;stroke-width:1.6}
+
+.foot{
+  border-top:1px solid var(--line);
+  padding:22px 0 40px;
+  display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;
+  font-size:12.5px;color:var(--ink-2);
+}
+
+/* toast */
+.toast{
+  position:fixed;left:50%;bottom:36px;transform:translate(-50%,14px);
+  background:var(--ink);color:var(--paper);
+  font-size:13px;padding:9px 18px;
+  opacity:0;pointer-events:none;
+  transition:opacity .22s,transform .22s;
+  z-index:30;
+}
+.toast.on{opacity:1;transform:translate(-50%,0)}
+
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+
+/* ---------- 响应式 ---------- */
+@media (max-width:900px){
+  .hero{grid-template-columns:1fr;gap:40px;padding:56px 0 48px}
+  .facts{border-left:none;padding-left:0;border-top:1px solid var(--line);padding-top:24px}
+  .fact+.fact{padding-top:16px}
+  .sec-head{grid-template-columns:1fr;gap:14px;margin-bottom:28px}
+  .abilities,.timeline,.project{margin-left:0}
+  .abilities{grid-template-columns:1fr;gap:26px}
+  .ability{padding:0;border-left:none;border-top:1px solid var(--line);padding-top:22px}
+  .ability:first-child{border-top:none;padding-top:0}
+  .tl-row{grid-template-columns:96px 20px minmax(0,1fr);column-gap:12px}
+  .contact{grid-template-columns:1fr;gap:28px;padding:52px 0 40px}
+  .contact-links{align-items:flex-start}
+}
+@media (max-width:640px){
+  .nav{display:none}
+  .wrap{padding:0 20px}
+  .topbar-inner{padding:12px 20px}
+  .hero-name{font-size:clamp(42px,13vw,64px)}
+  .project-meta{gap:14px;font-size:13.5px}
+  .tl-row{grid-template-columns:82px 18px minmax(0,1fr)}
+  .tl-time{font-size:13.5px}
+  .foot{font-size:13px}
+}
+
+/* ---------- 打印 ---------- */
+@media print{
+  .topbar,.toast,.btn-print{display:none!important}
+  body{background:#fff}
+  .section,.project{break-inside:avoid}
+  .hero{padding:24px 0 32px}
+  a{color:#000}
+}
+</style>
 </head>
 <body>
-    <div class="container">
-        <!-- 头部自我介绍 -->
-        <header class="header">
-            <h1>李丽冰</h1>
-            <p class="subtitle">产品经理 / 管培生 · 秋招作品集</p>
-            <p class="desc">211应用经济学硕士，擅长B端需求梳理、原型设计、数据分析与方案落地</p>
-        </header>
-
-        <!-- 技能板块 -->
-        <section class="section">
-            <h2>🛠️ 技能栈</h2>
-            <div class="tag-group">
-                <span class="tag">Axure RP</span>
-                <span class="tag">Figma</span>
-                <span class="tag">PRD撰写</span>
-                <span class="tag">用户调研</span>
-                <span class="tag">数据分析</span>
-                <span class="tag">HTML / CSS</span>
-                <span class="tag">MES业务</span>
-            </div>
-        </section>
-
-        <!-- 项目板块 -->
-        <section class="section">
-            <h2>📂 项目作品</h2>
-            <div class="project-card">
-                <h3>网页作品集网站</h3>
-                <p>本项目，自主设计页面结构并完成前端开发，用于统一展示求职材料，后续持续迭代新增项目卡片。</p>
-            </div>
-            <div class="project-card">
-                <h3>B端MES系统需求迭代</h3>
-                <p>生产数字化B端产品实践，负责需求调研、流程梳理、原型与PRD输出，跟进跨团队落地。</p>
-            </div>
-        </section>
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="#top">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 17h18M3 12h13M3 7h18" stroke="#0D4A57" stroke-width="2.4"/></svg>
+      李丽冰 · 作品集
+    </a>
+    <nav class="nav">
+      <a href="#about">概览</a>
+      <a href="#skills">能力</a>
+      <a href="#path">经历</a>
+      <a href="#work">项目</a>
+      <a href="#contact">联系</a>
+    </nav>
+    <div class="topbar-actions">
+      <button class="btn-print" type="button" id="printBtn">打印 / 存为 PDF</button>
     </div>
+  </div>
+</header>
+
+<main id="top">
+<div class="wrap">
+
+  <!-- ===== 开场 ===== -->
+  <section class="hero">
+    <div>
+      <h1 class="hero-name">李丽冰</h1>
+      <p class="hero-title">产品经理 / 管培生 · 2027 届秋招</p>
+      <p class="hero-intro">
+        长安大学应用经济学硕士。在企业的 <strong>MES 产品团队</strong> 做过一段从需求调研到上线的完整实践：
+        跟车间的人聊天，把混乱的流程画清楚，再把结论写成研发愿意接的文档。
+        我更相信<strong>先把问题定义对</strong>，再去谈方案好不好看。
+      </p>
+    </div>
+
+    <dl class="facts">
+      <div class="fact">
+        <dt>求职方向</dt>
+        <dd>产品经理、产品运营、综合管培<span>2027 届校园招聘 · 可实习转正</span></dd>
+      </div>
+      <div class="fact">
+        <dt>教育背景</dt>
+        <dd>长安大学 · 应用经济学 硕士<span>2024—2027 · 均分 87.93 · 专业排名 12/27</span></dd>
+      </div>
+      <div class="fact">
+        <dt>实习经历</dt>
+        <dd>吉利广域铭岛 · 产品经理助理<span>MES 方向 · 需求调研与方案落地</span></dd>
+      </div>
+      <div class="fact">
+        <dt>当前所在地</dt>
+        <dd>西安<span>接受异地机会</span></dd>
+      </div>
+    </dl>
+  </section>
+
+  <!-- ===== 能力 ===== -->
+  <section class="section" id="skills">
+    <div class="sec-head">
+      <h2 class="sec-title">我在做什么</h2>
+      <p class="sec-note">
+        产品、数据、工具三条线是同时长出来的：经济学训练让我习惯先看证据，项目实践让我知道方案最终要落到别人的工作日里。
+      </p>
+    </div>
+    <div class="abilities">
+      <div class="ability">
+        <h3>产品设计</h3>
+        <ul>
+          <li>需求调研与用户访谈<i>能问出真实诉求，而不是把需求原话抄进文档</i></li>
+          <li>业务流程梳理<i>泳道图、状态流转、异常分支</i></li>
+          <li>原型与交互设计<i>Axure RP、Figma</i></li>
+          <li>PRD 撰写与需求评审<i>把边界、异常和验收标准写清楚</i></li>
+        </ul>
+      </div>
+      <div class="ability">
+        <h3>数据与分析</h3>
+        <ul>
+          <li>指标拆解与取数<i>Excel、SQL</i></li>
+          <li>量化分析方法<i>面板数据、回归、描述性统计</i></li>
+          <li>结论输出<i>研究报告、汇报材料、决策建议</i></li>
+        </ul>
+      </div>
+      <div class="ability">
+        <h3>工具与实现</h3>
+        <ul>
+          <li>飞书套件<i>多维表格、文档、审批流</i></li>
+          <li>HTML / CSS<i>能自己搭一个页面，理解前端成本</i></li>
+          <li>微信小程序<i>独立完成过一个产品的设计与上线</i></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 经历 ===== -->
+  <section class="section" id="path">
+    <div class="sec-head">
+      <h2 class="sec-title">走到现在</h2>
+      <p class="sec-note">从经济学课堂到制造车间，关注点一直没变：一个机制为什么有效，又卡在哪里。</p>
+    </div>
+    <div class="timeline">
+      <div class="tl-row">
+        <div class="tl-time">2026.07 — 2026.11</div>
+        <div class="tl-axis"><span class="tl-dot"></span></div>
+        <div class="tl-body">
+          <h3>吉利广域铭岛<em>产品经理助理</em></h3>
+          <p>进入 MES 产品线，负责生产报工与异常处理模块的需求工作：一线访谈、流程梳理、原型与 PRD 输出，跟研发与测试一起把版本推上线。</p>
+        </div>
+      </div>
+      <div class="tl-row">
+        <div class="tl-time">2024.09</div>
+        <div class="tl-axis"><span class="tl-dot"></span></div>
+        <div class="tl-body">
+          <h3>长安大学<em>应用经济学 硕士</em></h3>
+          <p>研究方向偏产业与资源配置，做过多轮数据清洗与量化分析；在校期间参与课题研究与学术汇报。</p>
+        </div>
+      </div>
+      <div class="tl-row">
+        <div class="tl-time">2020 — 2024</div>
+        <div class="tl-axis"><span class="tl-dot"></span></div>
+        <div class="tl-body">
+          <h3>西安文理学院<em>本科</em></h3>
+          <p>经济学基础训练，开始接触 Excel 建模与结构化写作。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 项目 ===== -->
+  <section class="section" id="work">
+    <div class="sec-head">
+      <h2 class="sec-title">做过的事</h2>
+      <p class="sec-note">三个方向：B 端业务系统的需求落地、C 端小程序的完整设计、量化研究的数据分析。</p>
+    </div>
+
+    <article class="project">
+      <div class="project-head">
+        <h3>MES 生产报工流程改造</h3>
+        <div class="project-meta">
+          <span>角色 <b>需求负责人</b></span>
+          <span>时间 <b>2026.08 — 2026.10</b></span>
+        </div>
+      </div>
+      <div class="project-body">
+        <p>走进车间跟班组长和操作工一起站了一个班，发现报工慢的根因不是系统卡，而是<strong>重复录入和异常上报靠电话</strong>。把现状流程画成泳道图之后，砍掉重复填写的环节，把异常提醒改成系统内定向推送给对应责任人。</p>
+        <p>输出业务流程图、Axure 原型与完整 PRD，组织需求评审，跟进开发澄清与测试验收。<strong>产出的文档被研发直接当归档模板用</strong>。</p>
+      </div>
+    </article>
+
+    <article class="project">
+      <div class="project-head">
+        <h3>校园二手交易小程序</h3>
+        <div class="project-meta">
+          <span>角色 <b>独立设计与开发</b></span>
+          <span>时间 <b>2025.03 — 2025.06</b></span>
+        </div>
+      </div>
+      <div class="project-body">
+        <p>从问卷和同学访谈出发，把需求收敛到"发布—浏览—联系"一条主路径上，先做能跑通的最小版本：不做担保交易，不做复杂分类，把发布成本压到三步以内。</p>
+        <p>自己完成信息架构、页面原型和小程序前端，上线后在校园内做了一轮小范围使用与反馈收集。</p>
+      </div>
+    </article>
+
+    <article class="project">
+      <div class="project-head">
+        <h3>产业资源配置量化研究</h3>
+        <div class="project-meta">
+          <span>角色 <b>数据分析与写作</b></span>
+          <span>时间 <b>2025.09 — 2026.06</b></span>
+        </div>
+      </div>
+      <div class="project-body">
+        <p>基于公开统计数据整理面板数据，完成指标构建、描述性统计与回归分析，把结论写成可以直接被政策讨论引用的一段话，而不是只报显著性。</p>
+        <p>研究成果参与学术会议汇报，并进入期刊投稿流程。</p>
+      </div>
+    </article>
+  </section>
+
+  <!-- ===== 联系 ===== -->
+  <section class="contact" id="contact">
+    <h2>如果这些和你们在招的岗位对得上，欢迎直接联系我。</h2>
+    <div class="contact-links">
+      <a href="mailto:your_email@example.com" id="mailLink">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14"/><path d="M3 7l9 6 9-6"/></svg>
+        your_email@example.com
+      </a>
+      <button type="button" id="copyBtn">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="12" height="12"/><path d="M5 15V3h12"/></svg>
+        复制邮箱
+      </button>
+      <a href="https://github.com/" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 4.5v9L12 21 4 16.5v-9L12 3z"/><path d="M4 7.5l8 4.5 8-4.5M12 12v9"/></svg>
+        GitHub 主页
+      </a>
+      <a href="./李丽冰-简历.pdf" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h9l3 3v15H6z"/><path d="M15 3v4h4"/></svg>
+        简历 PDF
+      </a>
+    </div>
+  </section>
+
+</div>
+</main>
+
+<footer class="foot">
+  <div class="wrap" style="display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;">
+    <span>李丽冰 · 产品经理作品集</span>
+    <span>本站使用 HTML / CSS 手写，托管于 GitHub Pages</span>
+  </div>
+</footer>
+
+<div class="toast" id="toast">邮箱已复制</div>
+
+<script>
+(function(){
+  var printBtn = document.getElementById('printBtn');
+  if (printBtn) printBtn.addEventListener('click', function(){ window.print(); });
+
+  var copyBtn = document.getElementById('copyBtn');
+  var toast = document.getElementById('toast');
+  var mailLink = document.getElementById('mailLink');
+  var email = mailLink ? (mailLink.getAttribute('href') || '').replace('mailto:', '') : '';
+
+  function showToast(msg){
+    if (!toast) return;
+    toast.textContent = msg;
+    toast.classList.add('on');
+    setTimeout(function(){ toast.classList.remove('on'); }, 1800);
+  }
+
+  if (copyBtn) {
+    copyBtn.addEventListener('click', function(){
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(email).then(function(){
+          showToast('邮箱已复制');
+        }).catch(function(){
+          showToast('复制失败，请手动选中邮箱');
+        });
+      } else {
+        showToast('当前浏览器不支持自动复制');
+      }
+    });
+  }
+})();
+</script>
 </body>
 </html>
+<!-- （注：内容由AI生成） -->
