@@ -1,44 +1,66 @@
-# 李丽冰｜产品经理 / 管培生 秋招
-📁 [网页版作品集](https://lisansuiya747.github.io/lisansuiya747/web-portfolio/)
+<!-- ============ Bloom Header (live weather · day / night follows your theme) ============ -->
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="bloom-header-night.svg" />
+    <img src="bloom-header.svg" width="900" alt="yuki4266 — blooming banner" />
+  </picture>
+</div>
 
-**应用经济学硕士**，专注产品经理与综合管培方向。  
-具备 B 端产品实践、MES 系统需求迭代、小程序产品设计与数据分析能力，擅长把业务问题转化为产品方案。
+<!-- ============ Tech Garden ============ -->
+<div align="center">
 
----
+<img src="chips/label-0.svg?v=792bb5b9" alt="AGENTS" /> <img src="chips/modelcontextprotocol.svg?v=789a4a10" alt="MCP" /> <img src="chips/a2a.svg?v=3c697f8d" alt="A2A" /> <img src="chips/agentskills.svg?v=b47eb5e2" alt="Agent Skills" /> <img src="chips/langgraph.svg?v=5a8da374" alt="LangGraph" /> <img src="chips/pydanticai.svg?v=66938cff" alt="Pydantic AI" /> <img src="chips/temporal.svg?v=c11e7280" alt="Temporal" /> <img src="chips/playwright.svg?v=45d6e242" alt="Playwright" />
+<br/>
+<img src="chips/label-1.svg?v=9134df93" alt="INFERENCE" /> <img src="chips/vllm.svg?v=5ece988c" alt="vLLM" /> <img src="chips/sglang.svg?v=d61d088a" alt="SGLang" /> <img src="chips/tensorrtllm.svg?v=267e516d" alt="TensorRT-LLM" /> <img src="chips/llamacpp.svg?v=7ccea1e3" alt="llama.cpp" /> <img src="chips/mlx.svg?v=2c2e1adf" alt="MLX" /> <img src="chips/ray.svg?v=912f1ba0" alt="Ray" /> <img src="chips/modal.svg?v=238a6884" alt="Modal" />
+<br/>
+<img src="chips/label-2.svg?v=b05d964d" alt="TRAINING" /> <img src="chips/pytorch.svg?v=1ce02f1e" alt="PyTorch" /> <img src="chips/transformers.svg?v=611fb6af" alt="Transformers" /> <img src="chips/trl.svg?v=8c6fdb8b" alt="TRL" /> <img src="chips/verl.svg?v=97484738" alt="verl" /> <img src="chips/unsloth.svg?v=92d36562" alt="Unsloth" /> <img src="chips/wandb.svg?v=a0361720" alt="W&amp;B" /> <img src="chips/cuda.svg?v=59d51f56" alt="CUDA" />
+<br/>
+<img src="chips/label-3.svg?v=a6d05422" alt="RAG / DATA" /> <img src="chips/postgresql.svg?v=7ad0be15" alt="pgvector" /> <img src="chips/qdrant.svg?v=ce3b6631" alt="Qdrant" /> <img src="chips/lancedb.svg?v=b632d5ee" alt="LanceDB" /> <img src="chips/elasticsearch.svg?v=91ba8d55" alt="Elasticsearch" /> <img src="chips/neo4j.svg?v=61dba079" alt="Neo4j" /> <img src="chips/duckdb.svg?v=abe2a30a" alt="DuckDB" /> <img src="chips/polars.svg?v=29247ad9" alt="Polars" />
+<br/>
+<img src="chips/label-4.svg?v=6cd4b14d" alt="LANG / OPS" /> <img src="chips/python.svg?v=e0201563" alt="Python" /> <img src="chips/uv.svg?v=39627b3c" alt="uv" /> <img src="chips/rust.svg?v=d719a705" alt="Rust" /> <img src="chips/typescript.svg?v=462e66d7" alt="TypeScript" /> <img src="chips/docker.svg?v=b584dfc2" alt="Docker" /> <img src="chips/kubernetes.svg?v=40696832" alt="Kubernetes" /> <img src="chips/opentelemetry.svg?v=0049ee37" alt="OpenTelemetry" />
 
-## 关于我
+<details>
+<summary>🌱 &nbsp;<b>Field guide</b> — open to read what every chip actually is</summary>
+<br/>
+<div align="center">
+<img src="chips/guide-0.svg?v=c840696e" alt="AGENTS field guide" /><br/>
+<img src="chips/guide-1.svg?v=ef15772a" alt="INFERENCE field guide" /><br/>
+<img src="chips/guide-2.svg?v=f12a97b7" alt="TRAINING field guide" /><br/>
+<img src="chips/guide-3.svg?v=d5a6a98b" alt="RAG / DATA field guide" /><br/>
+<img src="chips/guide-4.svg?v=d2d28da5" alt="LANG / OPS field guide" /><br/>
+</div>
+</details>
 
-- 求职方向：产品经理 / 综合管培生
-- 核心优势：B 端需求梳理、流程设计、原型输出、数据分析、跨部门推进
-- 近期关注：企业数字化、生产管理系统、小程序产品、用户增长
-- 一句话定位：**懂业务、能分析、会落地的产品候选人**
+</div>
 
----
+<br/>
 
-## 专业能力
+<!-- ============ Stats ============ -->
+<div align="center">
 
-| 模块 | 能力 |
-|---|---|
-| 产品设计 | 需求分析、用户调研、流程梳理、原型设计、PRD 撰写 |
-| 工具能力 | Axure、Figma、Excel、SQL、Markdown、HTML |
-| 业务场景 | MES 系统、生产管理、小程序、B 端后台 |
-| 分析能力 | 数据清洗、指标拆解、用户分析、课题研究 |
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="streak-night.svg" />
+  <img width="495" src="streak.svg" alt="contribution streak" />
+</picture>
 
----
+</div>
 
-## 项目经历
+<br/>
 
-### 1. MES 系统需求迭代项目
-- 负责生产管理模块的需求收集、业务流程梳理与原型设计
-- 对接业务、研发与测试团队，推动需求方案落地
-- 关注生产流程效率、异常处理与用户操作成本优化
+<!-- ============ Snake ============ -->
+<div align="center">
+  <img alt="contribution snake" src="https://raw.githubusercontent.com/yuki4266/yuki4266/output/github-contribution-grid-snake.svg" />
+</div>
 
-### 2. 小程序产品实践项目
-- 独立完成用户调研、需求定义、信息架构设计与原型输出
-- 围绕目标用户路径优化功能结构，提升使用效率
-- 输出产品方案、页面原型与功能说明文档
+<!-- ============ Footer (a cat lives here) ============ -->
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="garden-footer-night.svg" />
+    <img src="garden-footer.svg" width="900" alt="garden footer" />
+  </picture>
 
-### 3. 数据分析课题研究
-- 基于经济学方法进行数据整理、指标分析与结论提炼
-- 将分析结果转化为业务建议与可执行方案
-- 具备较强的数据敏感、逻辑表达和报告输出能力
+![Profile Views](https://komarev.com/ghpvc/?username=yuki4266&label=Profile%20views&color=F4795B&style=flat)
+
+<sub>The sky above follows the real forecast and the garden follows the season — powered by <a href="https://github.com/yuki4266/living-scene">living-scene</a>. Want one? <a href="https://github.com/yuki4266/living-scene-template/generate">Use the template</a>.</sub>
+
+</div>
