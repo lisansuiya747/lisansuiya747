@@ -1,6 +1,3 @@
-<h1 align="center">李丽冰</h1>
-<p align="center">2027届 | 产品经理方向应届生</p>
-<p align="center">深耕B端制造MES产品，擅长需求梳理、原型设计与项目落地</p>
 <p align="center">👉 <a href="#">网页版个人作品集</a></p>
 
 <!-- ============ Bloom Header (live weather · day / night follows your theme) ============ -->
